@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script> -->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+
+      <link href="assets/emoji/src/jquery.lsxemojipicker.css" rel="stylesheet">
+      <link rel="stylesheet" href="chat.style.css">
+      <script src="assets/emoji/src/jquery.lsxemojipicker.js"></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="chat">
+            <div class="header">
+               <div class="room">
+                  <span id="room">Sala x</span>
+                  <span id="count-users">120 usuários online</span>
+               </div>
+               <div class="user-info">
+                  Olá, <span id="user"> user</span>
+                  <button id="logout">
+                     <i class="fas fa-sign-out-alt"></i>
+                  </button>
+               </div>
+            </div>
+            <div id="chat-row">
+               <!-- <div class="message me">
+                  <div class="top">
+                     <span>user</span>
+                     <span id="time">10:15 </span>
+                  </div>
+                  <div class="content">
+                     ASDKJBASDVAJSVDJASVDA
+                  </div>
+               </div> -->
+            </div>
+            <div class="new-message">
+               <div name="message" id="message" row="1" contentEditable data-placeholder="Digite sua mensagem..."></div>
+               <!-- <input type="text" name="fakeMessage" id="fakeMessage" style="opacity: 0.5;"> -->
+               <button class="picker">
+                  <i class="far fa-laugh"></i>
+               </button>
+            </div>
+         </div>
+      </div>
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="chat.js"></script>
+      <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+      
+   </body>
+</html>

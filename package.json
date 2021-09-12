@@ -1,0 +1,36 @@
+{
+  "name": "not-a-chat",
+  "version": "0.0.1-beta",
+  "description": "Not a live chat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanmattos/not-a-chat.git"
+  },
+  "keywords": [
+    "websocket",
+    "live",
+    "chat"
+  ],
+  "author": "Ryan Matos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanmattos/not-a-chat/issues"
+  },
+  "homepage": "https://github.com/ryanmattos/not-a-chat#readme",
+  "dependencies": {
+    "date-fns": "^2.23.0",
+    "express": "^4.17.1",
+    "socket.io": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/socket.io": "^3.0.2",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.3"
+  }
+}
