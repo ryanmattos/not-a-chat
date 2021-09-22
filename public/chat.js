@@ -16,7 +16,7 @@ socket.emit('room', {
 
    document.querySelector('#room').innerHTML = room
    document.querySelector('#user').innerHTML = user
-   document.querySelector('#count-users').innerHTML = `${count} usuário${count === 1 ? '' : 's'} online${count === 1 ? '' : 's'}`
+   document.querySelector('#count-users').innerHTML = `${count} usuário${count === 1 ? '' : 's'} online`
    document.title = `Not a Chat - ${room}`
 
    // if (response.error) {

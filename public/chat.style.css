@@ -175,8 +175,8 @@ input, button {
   
    word-wrap: break-word;
 
-   background: rgb(161,50,189);
-   background: linear-gradient(144deg, rgba(161,50,189,1) 0%, rgba(222,44,194,1) 100%);
+   background: #8a30a1;
+   background: linear-gradient(144deg, #8a30a1 0%, #ab2796 100%);
 }
 
 .container > .chat > #chat-row > .me > .content {
